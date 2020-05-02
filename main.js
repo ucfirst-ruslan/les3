@@ -14,8 +14,6 @@ function Human() {
         this.weight = val + 'cm';
         return this;
     };
-
-
 }
 
 
@@ -96,13 +94,13 @@ function Body() {
         return this;
     };
 
-    this.sex = null;
-    this.setSex = function (val) {
-        this.sex = val;
+    this.gender = null;
+    this.setGender = function (val) {
+        this.gender = val;
 
-        let typeSex;
-        typeSex = val[0].toUpperCase() + val.slice(1);
-        eval(typeSex).call(this);
+        let typeGender;
+        typeGender = val[0].toUpperCase() + val.slice(1);
+        eval(typeGender).call(this);
         return this;
     };
 }
@@ -150,7 +148,7 @@ human
     .setBodyType('fat')
     .setHandsQnt(2)
     .setFingersHandsQnt(10)
-    .setSex('Male')
+    .setGender('Male')
     .setPenisSize(20)
     .setFeetsQnt(2)
     .setFingersFeetsQnt(10)
